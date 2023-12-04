@@ -19,8 +19,8 @@ OpenJDK 64-Bit Server VM Temurin-17.0.1+12 (build 17.0.1+12, mixed mode, sharing
 #### 1.2. Input
 
 * **Input file:** [Data](/Data)
-* **Input file size:** 80.6 MB
-* **Input file format:** csv
+* **Input file size:** 27.0 MB
+* **Input file format:** sgm
 
 #### 1.3. Output
 #### You can find all the output files in the folder named "output"
