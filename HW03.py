@@ -1,6 +1,7 @@
 import re
 import hashlib
 import csv
+import sys
 from pyspark.sql import SparkSession
 from pyspark import SparkContext, SparkConf
 from collections import defaultdict
@@ -36,6 +37,16 @@ def minhash_signature(shingle_set, hash_funcs):
 
 
 def main():
+    
+    if len(sys.argv) != 2:
+        print("Usage: python file.py k")
+        sys.exit(1)
+
+    # Specify the value of k for k-shingles
+    # You can change this value as needed
+    k = sys.argv[1]
+    H = 50  # Number of hash functions    
+    print('k value is:', k)
     # Initialize a Spark session
     spark = (
         SparkSession.builder.appName("Reuters21578LSH")
@@ -79,9 +90,7 @@ def main():
         "Data/reut2-021.sgm",
     ]
 
-    # Specify the value of k for k-shingles
-    k = 3  # You can change this value as needed
-    H = 50  # Number of hash functions
+    
 
     # Generate hash functions
     max_shingle_id = 2**32 - 1
