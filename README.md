@@ -4,8 +4,7 @@
 ----------------------------------------------------------------------------------------------
 ### **Cluser Info**
 ![Alt text](image.png)
-![Alt text](image-1.png)
-![Alt text](image-2.png)
+
 ### 1. Project Setup and Information
 #### 1.1. Environment
 * **Python 3.11.4**
@@ -28,7 +27,7 @@ OpenJDK 64-Bit Server VM Temurin-17.0.1+12 (build 17.0.1+12, mixed mode, sharing
 * **Output files format:** csv
 
 #### 1.4. Code
-* **Code:** [HW01.py](HW03.py)
+* **Code:** [HW03.py](HW03.py)
 
 ### 2. How to run the code
-```spark-submit --master spark://96.9.210.170:7077 HW01.py```
+```spark-submit --master spark://96.9.210.170:7077 HW03.py k```
